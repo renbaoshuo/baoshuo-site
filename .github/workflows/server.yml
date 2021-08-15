@@ -1,0 +1,38 @@
+name: Deploy blog to Server
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Deploy to Server 1
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-avz --delete  --exclude '.git' --exclude '.github' --exclude '.gitlab-ci.yml' --exclude '.nojekyll'"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST_1 }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.TARGET }}
+      - name: Deploy to Server 2
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-avz --delete  --exclude '.git' --exclude '.github' --exclude '.gitlab-ci.yml' --exclude '.nojekyll'"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST_2 }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.TARGET }}
+      - name: Deploy to Server 3
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-avz --delete  --exclude '.git' --exclude '.github' --exclude '.gitlab-ci.yml' --exclude '.nojekyll'"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST_3 }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.TARGET }}
