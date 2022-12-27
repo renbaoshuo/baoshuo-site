@@ -1,4 +1,4 @@
-import{p as c}from"./network_-22949d19.js";import{n as o,a as n,j as t,F as l}from"./vendor-eeaed557.js";function r(i){const e=Object.assign({h2:"h2",p:"p",a:"a",img:"img",ul:"ul",li:"li",code:"code"},o(),i.components);return t(l,{children:[n(e.h2,{id:"introduce",children:"Introduce"}),`
+import{p as c}from"./network_-22949d19.js";import{n as o,a as n,j as t,F as l}from"./vendor-0233c3b5.js";function r(i){const e=Object.assign({h2:"h2",p:"p",a:"a",img:"img",ul:"ul",li:"li",code:"code"},o(),i.components);return t(l,{children:[n(e.h2,{id:"introduce",children:"Introduce"}),`
 `,t(e.p,{children:["Baoshuo Network (BSNET, ",n(e.a,{href:"https://bgp.he.net/AS141776",children:"AS141776"}),") is operated by ",n(e.a,{href:"/",children:"Baoshuo"}),"."]}),`
 `,n(e.p,{children:"This network supports IPv4 and IPv6."}),`
 `,n(e.h2,{id:"route-propagation-graph",children:"Route Propagation Graph"}),`
