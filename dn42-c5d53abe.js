@@ -1,4 +1,4 @@
-import{p as l}from"./dn42_-dd7ebca4.js";import{i as r,a as n,j as i,F as d}from"./vendor-ef78363c.js";function t(o){const e=Object.assign({h2:"h2",p:"p",a:"a",img:"img",ul:"ul",li:"li",strong:"strong",code:"code"},r(),o.components);return i(d,{children:[n(e.h2,{id:"introduce",children:"Introduce"}),`
+import{p as l}from"./dn42_-dd7ebca4.js";import{i as r,a as n,j as i,F as d}from"./vendor-82984657.js";function t(o){const e=Object.assign({h2:"h2",p:"p",a:"a",img:"img",ul:"ul",li:"li",strong:"strong",code:"code"},r(),o.components);return i(d,{children:[n(e.h2,{id:"introduce",children:"Introduce"}),`
 `,i(e.p,{children:["Baoshuo Experimental Network (BSNET, ",n(e.a,{href:"https://bgp42.strexp.net/asinfo/4242420247",children:"AS4242420247"}),") is operated by ",n(e.a,{href:"/",children:"Baoshuo"}),"."]}),`
 `,n(e.p,{children:"This network supports IPv4 and IPv6."}),`
 `,n(e.h2,{id:"route-propagation-graph",children:"Route Propagation Graph"}),`
